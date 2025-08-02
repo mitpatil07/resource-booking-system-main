@@ -1,9 +1,12 @@
 # Python
 __pycache__/
 *.py[cod]
-*.sqlite3
 .env
 env/
+db.sqlite3
+*.pyc
+node_modules/
+build/
 
 # Django Migrations
 **/migrations/*.pyc
