@@ -1,0 +1,30 @@
+# Python
+__pycache__/
+*.py[cod]
+*.sqlite3
+.env
+env/
+
+# Django Migrations
+**/migrations/*.pyc
+**/migrations/__pycache__/
+**/migrations/*.py
+!**/migrations/__init__.py
+
+# React
+frontend/node_modules/
+frontend/build/
+frontend/.env
+
+# Docker
+*.log
+*.pid
+*.db
+*.sqlite3
+*.pyc
+.DS_Store
+
+# IDEs
+.vscode/
+.idea/
+*.swp

@@ -1,0 +1,41 @@
+services:
+  db:
+    image: postgres:15
+    environment:
+      POSTGRES_DB: bookingdb
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: mitesh
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+
+  backend:
+    build: .
+    command: python manage.py runserver 0.0.0.0:8000
+    volumes:
+      - .:/app
+    ports:
+      - "8000:8000"
+    depends_on:
+      - db
+    environment:
+      POSTGRES_DB: bookingdb
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: mitesh
+      POSTGRES_HOST: db
+      POSTGRES_PORT: 5432
+
+  frontend:
+    build:
+      context: ./booking-frontend
+    volumes:
+      - ./booking-frontend:/app
+    ports:
+      - "3000:3000"
+    stdin_open: true
+    tty: true
+
+
+volumes:
+  postgres_data:
