@@ -157,7 +157,8 @@ CORS_ALLOW_ALL_ORIGINS = True
 
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000",
-    "https://resource-booking-system-rd80.onrender.com"
+    # "https://resource-booking-system-rd80.onrender.com"
+    "https://resource-booking-system-main.onrender.com"
 ]
 
 from datetime import timedelta
