@@ -15,9 +15,9 @@ build/
 !**/migrations/__init__.py
 
 # React
-frontend/node_modules/
-frontend/build/
-frontend/.env
+booking-frontend/node_modules/
+booking-frontend/build/
+booking-frontend/.env
 
 # Docker
 *.log
