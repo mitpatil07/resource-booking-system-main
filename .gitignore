@@ -13,9 +13,9 @@ db.sqlite3
 !**/migrations/__init__.py
 
 # React
-booking-frontend/node_modules/
-booking-frontend/build/
-booking-frontend/.env
+# booking-frontend/node_modules/
+# booking-frontend/build/
+# booking-frontend/.env
 
 # Docker
 *.log
