@@ -3,8 +3,8 @@ from rest_framework import generics, permissions, serializers
 from .models import Resource, Booking
 from .serializers import ResourceSerializer, BookingSerializer
 
-def index(request):
-    return render(request, 'index.html')
+# def index(request):
+#     return render(request, 'index.html')
 
 class ResourceListCreateView(generics.ListCreateAPIView):
     queryset = Resource.objects.all()
