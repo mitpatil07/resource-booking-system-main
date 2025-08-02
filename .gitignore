@@ -5,8 +5,6 @@ __pycache__/
 env/
 db.sqlite3
 *.pyc
-node_modules/
-build/
 
 # Django Migrations
 **/migrations/*.pyc
@@ -24,7 +22,6 @@ booking-frontend/.env
 *.pid
 *.db
 *.sqlite3
-*.pyc
 .DS_Store
 
 # IDEs
