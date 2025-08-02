@@ -7,4 +7,7 @@ RUN pip install --upgrade pip && pip install -r requirements.txt
 
 COPY . .
 
-CMD ["python", "manage.py", "runserver", "0.0.0.0:8000"]
+# CMD ["python", "manage.py", "runserver", "0.0.0.0:8000"]
+
+# Production-grade WSGI server
+CMD ["gunicorn", "booking_system.wsgi:application", "--bind", "0.0.0.0:8000"]
