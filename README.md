@@ -32,7 +32,7 @@ This project is built with:
 ### 2. Clone the Repository
 
 ```bash
-git clone https://github.com/mitpatil07/resource-booking-system.git
+git clone https://github.com/mitpatil07/resource-booking-system-main.git
 cd resource_booking_system
 
 3. Create .env (Optional)
